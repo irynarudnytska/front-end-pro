@@ -1,6 +1,7 @@
 const inputNumber = Number(prompt("Enter a number"));
 
 let isComposite = false;
+
 for (let i = 2; i <= inputNumber ** 0.5; i++) {
   if (inputNumber % i === 0) {
     isComposite = true;
