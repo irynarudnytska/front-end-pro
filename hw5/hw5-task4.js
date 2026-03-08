@@ -9,10 +9,10 @@ for (let i = 2; i <= inputNumber ** 0.5; i++) {
   }
 }
 
-if (!isComposite && inputNumber >= 2) {
-  console.log("It's a prime number");
-} else if (isComposite && inputNumber >= 2) {
+if (inputNumber <= 1) {
+  console.log("It is neither a prime nor a composite number");
+} else if (isComposite) {
   console.log("It's a composite number");
 } else {
-  console.log("It is neither a prime nor a composite number");
+  console.log("It is a prime number");
 }
